@@ -1,0 +1,40 @@
+========================================================= test session starts ==========================================================
+platform linux -- Python 3.10.8, pytest-7.2.0, pluggy-1.0.0
+rootdir: /home/jovyan
+plugins: anyio-3.6.2
+collected 2 items
+
+work/test_rfm_pyspark.py Directorio:  ['.profile', '.bash_logout', '.bashrc', '.cache', '.bash_history', '.astropy', '.jupyter', '.local', '.pytest_cache', '.ipython', '.conda', '.config', '.npm', '.wget-hsts', 'work']
+.23/02/02 22:53:28 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/02/02 22:53:28 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+23/02/02 22:55:42 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+
+test_rfm_pyspark
+
+RAM ocupada ANTES del test: 
+46.8
+%
+61
+1
+319
+1
+344153.2899999998
+0.77
+
+RAM ocupada DESPUÉS del test: 
+67.1
+%
+
+.
+
+=========================================================== warnings summary ===========================================================
+work/test_rfm_pyspark.py::Test::test_rfm_pyspark
+  /usr/local/spark/python/pyspark/sql/context.py:112: FutureWarning: Deprecated in 3.0.0. Use SparkSession.builder.getOrCreate() instead.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================================== slowest durations ===========================================================
+185.86s call     work/test_rfm_pyspark.py::Test::test_rfm_pyspark
+
+(5 durations < 0.005s hidden.  Use -vv to show these durations.)
+=============================================== 2 passed, 1 warning in 186.49s (0:03:06) ===============================================

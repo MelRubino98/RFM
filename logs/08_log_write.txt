@@ -1,0 +1,450 @@
+=================================================== test session starts ===================================================
+platform linux -- Python 3.10.8, pytest-7.2.0, pluggy-1.0.0
+rootdir: /home/jovyan
+plugins: anyio-3.6.2
+collected 36 items
+
+work/test_write.py Directorio:  ['.profile', '.bash_logout', '.bashrc', '.cache', '.bash_history', '.astropy', '.jupyter', '.local', '.pytest_cache', '.ipython', '.conda', '.config', '.npm', '.wget-hsts', 'work']
+.test_write_pandas_1M
+
+RAM ocupada ANTES del test: 
+17.3
+%
+
+RAM ocupada DESPUÉS del test: 
+18.7
+%
+
+.test_write_pandas_5M
+
+RAM ocupada ANTES del test: 
+17.6
+%
+
+RAM ocupada DESPUÉS del test: 
+24.2
+%
+
+.test_write_pandas_10M
+
+RAM ocupada ANTES del test: 
+18.3
+%
+
+RAM ocupada DESPUÉS del test: 
+30.9
+%
+
+.test_write_pandas_25M
+
+RAM ocupada ANTES del test: 
+19.1
+%
+
+RAM ocupada DESPUÉS del test: 
+47.2
+%
+
+.test_write_pandas_1M_parquet
+
+RAM ocupada ANTES del test: 
+14.5
+%
+
+RAM ocupada DESPUÉS del test: 
+17.2
+%
+
+.test_write_pandas_5M_parquet
+
+RAM ocupada ANTES del test: 
+16.5
+%
+
+RAM ocupada DESPUÉS del test: 
+28.5
+%
+
+.test_write_pandas_10M_parquet
+
+RAM ocupada ANTES del test: 
+22.6
+%
+
+RAM ocupada DESPUÉS del test: 
+41.8
+%
+
+.test_write_pandas_25M_parquet
+
+RAM ocupada ANTES del test: 
+30.0
+%
+
+RAM ocupada DESPUÉS del test: 
+78.0
+%
+
+.23/01/25 20:45:35 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/01/25 20:45:40 WARN CSVHeaderChecker: CSV header does not conform to the schema.
+ Header: , event_time, event_type, product_id, category_id, category_code, brand, price, user_id, user_session
+ Schema: _c0, event_time, event_type, product_id, category_id, category_code, brand, price, user_id, user_session
+Expected: _c0 but found: 
+CSV file: file:///home/jovyan/work/2019-Oct-1M.csv
+test_write_pyspark_1M
+
+RAM ocupada ANTES del test: 
+14.5
+%
+
+RAM ocupada DESPUÉS del test: 
+19.7
+%
+
+.23/01/25 20:45:49 WARN CSVHeaderChecker: CSV header does not conform to the schema.
+ Header: , event_time, event_type, product_id, category_id, category_code, brand, price, user_id, user_session
+ Schema: _c0, event_time, event_type, product_id, category_id, category_code, brand, price, user_id, user_session
+Expected: _c0 but found: 
+CSV file: file:///home/jovyan/work/2019-Oct-5M.csv
+test_write_pyspark_5M
+
+RAM ocupada ANTES del test: 
+19.8
+%
+
+RAM ocupada DESPUÉS del test: 
+20.1
+%
+
+.23/01/25 20:46:25 WARN CSVHeaderChecker: CSV header does not conform to the schema.
+ Header: , event_time, event_type, product_id, category_id, category_code, brand, price, user_id, user_session
+ Schema: _c0, event_time, event_type, product_id, category_id, category_code, brand, price, user_id, user_session
+Expected: _c0 but found: 
+CSV file: file:///home/jovyan/work/2019-Oct-10M.csv
+test_write_pyspark_10M
+
+RAM ocupada ANTES del test: 
+20.1
+%
+
+RAM ocupada DESPUÉS del test: 
+20.7
+%
+
+.23/01/25 20:47:35 WARN CSVHeaderChecker: CSV header does not conform to the schema.
+ Header: , event_time, event_type, product_id, category_id, category_code, brand, price, user_id, user_session
+ Schema: _c0, event_time, event_type, product_id, category_id, category_code, brand, price, user_id, user_session
+Expected: _c0 but found: 
+CSV file: file:///home/jovyan/work/2019-Oct-25M.csv
+test_write_pyspark_25M
+
+RAM ocupada ANTES del test: 
+20.7
+%
+
+RAM ocupada DESPUÉS del test: 
+22.6
+%
+
+
+.test_write_pyspark_total
+
+RAM ocupada ANTES del test: 
+22.6
+%
+
+RAM ocupada DESPUÉS del test: 
+22.9
+%
+
+.
+
+.23/01/26 14:17:18 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+test_write_pyspark_1M_parquet
+
+RAM ocupada ANTES del test: 
+14.8
+%
+
+RAM ocupada DESPUÉS del test: 
+16.6
+%
+F23/01/26 14:17:24 WARN CSVHeaderChecker: CSV header does not conform to the schema.
+ Header: , event_time, event_type, product_id, category_id, category_code, brand, price, user_id, user_session
+ Schema: _c0, event_time, event_type, product_id, category_id, category_code, brand, price, user_id, user_session
+Expected: _c0 but found: 
+CSV file: file:///home/jovyan/work/2019-Oct-5M.csv
+test_write_pyspark_5M_parquet
+
+RAM ocupada ANTES del test: 
+19.2
+%
+
+RAM ocupada DESPUÉS del test: 
+24.9
+%
+
+.23/01/26 14:18:11 WARN CSVHeaderChecker: CSV header does not conform to the schema.
+ Header: , event_time, event_type, product_id, category_id, category_code, brand, price, user_id, user_session
+ Schema: _c0, event_time, event_type, product_id, category_id, category_code, brand, price, user_id, user_session
+Expected: _c0 but found: 
+CSV file: file:///home/jovyan/work/2019-Oct-10M.csv
+test_write_pyspark_10M_parquet
+
+RAM ocupada ANTES del test: 
+24.9
+%
+
+RAM ocupada DESPUÉS del test: 
+26.6
+%
+
+.23/01/26 14:19:39 WARN CSVHeaderChecker: CSV header does not conform to the schema.
+ Header: , event_time, event_type, product_id, category_id, category_code, brand, price, user_id, user_session
+ Schema: _c0, event_time, event_type, product_id, category_id, category_code, brand, price, user_id, user_session
+Expected: _c0 but found: 
+CSV file: file:///home/jovyan/work/2019-Oct-25M.csv
+test_write_pyspark_25M_parquet
+
+RAM ocupada ANTES del test: 
+26.6
+%
+
+RAM ocupada DESPUÉS del test: 
+28.3
+%
+
+.test_write_pyspark_total_parquet
+
+RAM ocupada ANTES del test: 
+28.3
+%
+
+RAM ocupada DESPUÉS del test: 
+29.3
+%
+
+.test_write_vaex_1M
+
+RAM ocupada ANTES del test: 
+14.3
+%
+
+RAM ocupada DESPUÉS del test: 
+17.7
+%
+
+.test_write_vaex_5M
+
+RAM ocupada ANTES del test: 
+17.7
+%
+
+RAM ocupada DESPUÉS del test: 
+17.7
+%
+
+.test_write_vaex_10M
+
+RAM ocupada ANTES del test: 
+17.6
+%
+
+RAM ocupada DESPUÉS del test: 
+18.3
+%
+
+.test_write_vaex_25M
+
+RAM ocupada ANTES del test: 
+18.1
+%
+
+RAM ocupada DESPUÉS del test: 
+19.0
+%
+
+.test_write_vaex_total
+
+RAM ocupada ANTES del test: 
+18.4
+%
+
+RAM ocupada DESPUÉS del test: 
+22.0
+%
+
+.test_write_vaex_1M_parquet
+
+RAM ocupada ANTES del test: 
+14.1
+%
+
+RAM ocupada DESPUÉS del test: 
+17.5
+%
+
+.test_write_vaex_5M_parquet
+
+RAM ocupada ANTES del test: 
+17.3
+%
+
+RAM ocupada DESPUÉS del test: 
+18.8
+%
+
+.test_write_vaex_10M_parquet
+
+RAM ocupada ANTES del test: 
+18.2
+%
+
+RAM ocupada DESPUÉS del test: 
+18.5
+%
+
+.test_write_vaex_25M_parquet
+
+RAM ocupada ANTES del test: 
+18.2
+%
+
+RAM ocupada DESPUÉS del test: 
+18.7
+%
+
+.test_write_vaex_total_parquet
+
+RAM ocupada ANTES del test: 
+18.0
+%
+
+RAM ocupada DESPUÉS del test: 
+18.0
+%
+
+.test_write_dask_1M
+
+RAM ocupada ANTES del test: 
+13.5
+%
+
+RAM ocupada DESPUÉS del test: 
+15.6
+%
+
+.test_write_dask_5M
+
+RAM ocupada ANTES del test: 
+14.4
+%
+
+RAM ocupada DESPUÉS del test: 
+30.5
+%
+
+.test_write_dask_10M
+
+RAM ocupada ANTES del test: 
+24.1
+%
+
+RAM ocupada DESPUÉS del test: 
+51.4
+%
+
+.test_write_dask_25M
+
+RAM ocupada ANTES del test: 
+38.8
+%
+
+RAM ocupada DESPUÉS del test: 
+83.2
+%
+
+.
+
+.test_write_dask_1M_parquet
+
+RAM ocupada ANTES del test: 
+14.2
+%
+
+RAM ocupada DESPUÉS del test: 
+17.6
+%
+
+.test_write_dask_5M_parquet
+
+RAM ocupada ANTES del test: 
+15.9
+%
+
+RAM ocupada DESPUÉS del test: 
+38.5
+%
+
+.test_write_dask_10M_parquet
+
+RAM ocupada ANTES del test: 
+32.2
+%
+
+RAM ocupada DESPUÉS del test: 
+62.6
+%
+
+
+==================================================== warnings summary =====================================================
+work/test_write.py::Test::test_write_pyspark_1M
+work/test_write.py::Test::test_write_pyspark_5M
+work/test_write.py::Test::test_write_pyspark_10M
+work/test_write.py::Test::test_write_pyspark_25M
+work/test_write.py::Test::test_write_pyspark_total
+  /usr/local/spark/python/pyspark/sql/context.py:112: FutureWarning: Deprecated in 3.0.0. Use SparkSession.builder.getOrCreate() instead.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+
+==================================================== slowest durations ====================================================
+1568.54s call     work/test_write.py::Test::test_write_vaex_total
+1042.56s call     work/test_write.py::Test::test_write_pyspark_total_parquet
+897.63s call     work/test_write.py::Test::test_write_vaex_total_parquet
+793.91s call     work/test_write.py::Test::test_write_pyspark_total
+384.22s call     work/test_write.py::Test::test_write_vaex_25M
+286.38s call     work/test_write.py::Test::test_write_pandas_25M
+259.55s call     work/test_write.py::Test::test_write_dask_25M
+227.79s call     work/test_write.py::Test::test_write_pyspark_25M_parquet
+183.62s call     work/test_write.py::Test::test_write_pyspark_25M
+180.75s call     work/test_write.py::Test::test_write_vaex_25M_parquet
+149.15s call     work/test_write.py::Test::test_write_vaex_10M
+123.35s call     work/test_write.py::Test::test_write_pandas_25M_parquet
+112.11s call     work/test_write.py::Test::test_write_pandas_10M
+98.37s call     work/test_write.py::Test::test_write_dask_10M
+88.20s call     work/test_write.py::Test::test_write_pyspark_10M_parquet
+76.11s call     work/test_write.py::Test::test_write_vaex_5M
+70.12s call     work/test_write.py::Test::test_write_pyspark_10M
+55.82s call     work/test_write.py::Test::test_write_pandas_5M
+55.78s call     work/test_write.py::Test::test_write_vaex_10M_parquet
+48.56s call     work/test_write.py::Test::test_write_dask_5M
+46.85s call     work/test_write.py::Test::test_write_pyspark_5M_parquet
+35.75s call     work/test_write.py::Test::test_write_pyspark_5M
+35.47s call     work/test_write.py::Test::test_write_pandas_10M_parquet
+24.92s call     work/test_write.py::Test::test_write_vaex_5M_parquet
+24.79s call     work/test_write.py::Test::test_write_dask_10M_parquet
+16.48s call     work/test_write.py::Test::test_write_pandas_5M_parquet
+16.06s call     work/test_write.py::Test::test_write_pyspark_1M
+15.86s call     work/test_write.py::Test::test_write_vaex_1M
+14.47s call     work/test_write.py::Test::test_write_dask_5M_parquet
+9.49s call     work/test_write.py::Test::test_write_dask_1M
+9.36s call     work/test_write.py::Test::test_write_pandas_1M
+6.81s call     work/test_write.py::Test::test_write_vaex_1M_parquet
+6.63s call     work/test_write.py::Test::test_write_pyspark_1M_parquet
+3.94s call     work/test_write.py::Test::test_write_pandas_1M_parquet
+2.99s call     work/test_write.py::Test::test_write_dask_1M_parquet
+0.03s teardown work/test_write.py::Test::test_write_pandas_25M
+
+(10 durations < 0.005s hidden.  Use -vv to show these durations.)
+============================================== 36 passed in 6972.39s (1:56:12) ==============================================

@@ -1,0 +1,68 @@
+===================================================== test session starts =====================================================
+platform linux -- Python 3.10.8, pytest-7.2.0, pluggy-1.0.0
+rootdir: /home/jovyan
+plugins: anyio-3.6.2
+collected 6 items
+
+work/test_dask_compute.py Directorio:  ['.profile', '.bash_logout', '.bashrc', '.cache', '.bash_history', '.astropy', '.jupyter', '.local', '.pytest_cache', '.ipython', '.conda', '.config', '.npm', '.wget-hsts', 'work']
+.groupby_dask_compute_1M
+
+RAM ocupada ANTES del test: 
+13.0
+%
+
+RAM ocupada DESPUÉS del test: 
+13.1
+%
+
+.groupby_dask_compute_5M
+
+RAM ocupada ANTES del test: 
+13.1
+%
+
+RAM ocupada DESPUÉS del test: 
+14.8
+%
+
+.groupby_dask_compute_10M
+
+RAM ocupada ANTES del test: 
+14.8
+%
+
+RAM ocupada DESPUÉS del test: 
+15.8
+%
+
+.groupby_dask_compute_25M
+
+RAM ocupada ANTES del test: 
+15.8
+%
+
+RAM ocupada DESPUÉS del test: 
+20.0
+%
+
+.groupby_dask_compute_total
+
+RAM ocupada ANTES del test: 
+20.0
+%
+
+RAM ocupada DESPUÉS del test: 
+22.1
+%
+
+.
+
+====================================================== slowest durations ======================================================
+60.63s call     work/test_dask_compute.py::Test::test_groupby_dask_compute_total
+13.99s call     work/test_dask_compute.py::Test::test_groupby_dask_compute_25M
+6.25s call     work/test_dask_compute.py::Test::test_groupby_dask_compute_10M
+3.73s call     work/test_dask_compute.py::Test::test_groupby_dask_compute_5M
+0.73s call     work/test_dask_compute.py::Test::test_groupby_dask_compute_1M
+
+(13 durations < 0.005s hidden.  Use -vv to show these durations.)
+================================================ 6 passed in 86.78s (0:01:26) =================================================

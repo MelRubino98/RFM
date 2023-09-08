@@ -1,0 +1,239 @@
+==================================================== test session starts =====================================================
+platform linux -- Python 3.10.8, pytest-7.2.0, pluggy-1.0.0
+rootdir: /home/jovyan
+plugins: anyio-3.6.2
+collected 20 items
+
+work/test_delcolumn.py Directorio:  ['.profile', '.bash_logout', '.bashrc', '.cache', '.bash_history', '.astropy', '.jupyter', '.local', '.pytest_cache', '.ipython', '.conda', '.config', '.npm', '.wget-hsts', 'work']
+.del_column_pandas_1M
+
+RAM ocupada ANTES del test: 
+15.1
+%
+
+RAM ocupada DESPUÉS del test: 
+16.4
+%
+
+.del_column_pandas_5M
+
+RAM ocupada ANTES del test: 
+15.3
+%
+
+RAM ocupada DESPUÉS del test: 
+21.3
+%
+
+.del_column_pandas_10M
+
+RAM ocupada ANTES del test: 
+17.5
+%
+
+RAM ocupada DESPUÉS del test: 
+27.3
+%
+
+.del_column_pandas_25M
+
+RAM ocupada ANTES del test: 
+17.8
+%
+
+RAM ocupada DESPUÉS del test: 
+40.8
+%
+
+.del_column_dask_1M
+
+RAM ocupada ANTES del test: 
+15.7
+%
+
+RAM ocupada DESPUÉS del test: 
+15.7
+%
+
+.del_column_dask_5M
+
+RAM ocupada ANTES del test: 
+15.4
+%
+
+RAM ocupada DESPUÉS del test: 
+15.4
+%
+
+.del_column_dask_10M
+
+RAM ocupada ANTES del test: 
+15.3
+%
+
+RAM ocupada DESPUÉS del test: 
+15.3
+%
+
+.del_column_dask_25M
+
+RAM ocupada ANTES del test: 
+15.3
+%
+
+RAM ocupada DESPUÉS del test: 
+15.3
+%
+
+.del_column_dask_total
+
+RAM ocupada ANTES del test: 
+16.9
+%
+
+RAM ocupada DESPUÉS del test: 
+16.9
+%
+
+.del_col_vaex_1M
+
+RAM ocupada ANTES del test: 
+15.3
+%
+
+RAM ocupada DESPUÉS del test: 
+15.7
+%
+
+.del_col_vaex_5M
+
+RAM ocupada ANTES del test: 
+15.7
+%
+
+RAM ocupada DESPUÉS del test: 
+15.7
+%
+
+.del_col_vaex_10M
+
+RAM ocupada ANTES del test: 
+15.5
+%
+
+RAM ocupada DESPUÉS del test: 
+15.9
+%
+
+.del_col_vaex_25M
+
+RAM ocupada ANTES del test: 
+15.8
+%
+
+RAM ocupada DESPUÉS del test: 
+15.9
+%
+
+.del_col_vaex_total
+
+RAM ocupada ANTES del test: 
+15.8
+%
+
+RAM ocupada DESPUÉS del test: 
+16.6
+%
+
+.23/01/16 13:11:13 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+del_column_pyspark_1M
+
+RAM ocupada ANTES del test: 
+16.0
+%
+
+RAM ocupada DESPUÉS del test: 
+20.7
+%
+
+.del_column_pyspark_5M
+
+RAM ocupada ANTES del test: 
+20.7
+%
+
+RAM ocupada DESPUÉS del test: 
+21.1
+%
+
+.del_column_pyspark_10M
+
+RAM ocupada ANTES del test: 
+21.1
+%
+
+RAM ocupada DESPUÉS del test: 
+21.2
+%
+
+.del_column_pyspark_25M
+
+RAM ocupada ANTES del test: 
+21.1
+%
+
+RAM ocupada DESPUÉS del test: 
+21.2
+%
+
+.del_column_pyspark_total
+
+RAM ocupada ANTES del test: 
+21.2
+%
+
+RAM ocupada DESPUÉS del test: 
+21.3
+%
+
+.
+
+====================================================== warnings summary ======================================================
+work/test_delcolumn.py::Test::test_del_col_vaex_1M
+  <frozen importlib._bootstrap>:241: RuntimeWarning: numpy.ndarray size changed, may indicate binary incompatibility. Expected 88 from C header, got 96 from PyObject
+
+work/test_delcolumn.py::Test::test_del_column_pyspark_1M
+work/test_delcolumn.py::Test::test_del_column_pyspark_5M
+work/test_delcolumn.py::Test::test_del_column_pyspark_10M
+work/test_delcolumn.py::Test::test_del_column_pyspark_25M
+work/test_delcolumn.py::Test::test_del_column_pyspark_total
+  /usr/local/spark/python/pyspark/sql/context.py:112: FutureWarning: Deprecated in 3.0.0. Use SparkSession.builder.getOrCreate() instead.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+===================================================== slowest durations ======================================================
+276.91s call     work/test_delcolumn.py::Test::test_del_col_vaex_total
+87.00s call     work/test_delcolumn.py::Test::test_del_column_pandas_25M
+52.63s call     work/test_delcolumn.py::Test::test_del_col_vaex_25M
+25.07s call     work/test_delcolumn.py::Test::test_del_column_pandas_10M
+22.51s call     work/test_delcolumn.py::Test::test_del_col_vaex_10M
+13.99s call     work/test_delcolumn.py::Test::test_del_column_pandas_5M
+11.41s call     work/test_delcolumn.py::Test::test_del_column_pyspark_1M
+11.39s call     work/test_delcolumn.py::Test::test_del_col_vaex_5M
+4.11s call     work/test_delcolumn.py::Test::test_del_column_dask_1M
+3.65s call     work/test_delcolumn.py::Test::test_del_col_vaex_1M
+2.65s call     work/test_delcolumn.py::Test::test_del_column_pandas_1M
+0.50s call     work/test_delcolumn.py::Test::test_del_column_pyspark_5M
+0.47s call     work/test_delcolumn.py::Test::test_del_column_pyspark_25M
+0.40s call     work/test_delcolumn.py::Test::test_del_column_pyspark_10M
+0.33s call     work/test_delcolumn.py::Test::test_del_column_pyspark_total
+0.12s call     work/test_delcolumn.py::Test::test_del_column_dask_total
+0.11s call     work/test_delcolumn.py::Test::test_del_column_dask_25M
+0.09s call     work/test_delcolumn.py::Test::test_del_column_dask_10M
+0.09s call     work/test_delcolumn.py::Test::test_del_column_dask_5M
+0.02s teardown work/test_delcolumn.py::Test::test_del_column_pandas_25M
+0.01s setup    work/test_delcolumn.py::Test::test_del_column_dask_1M
+0.01s teardown work/test_delcolumn.py::Test::test_del_col_vaex_total
+
+(38 durations < 0.005s hidden.  Use -vv to show these durations.)
+========================================= 20 passed, 6 warnings in 516.97s (0:08:36) =========================================

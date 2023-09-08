@@ -1,0 +1,238 @@
+==================================================== test session starts =====================================================
+platform linux -- Python 3.10.8, pytest-7.2.0, pluggy-1.0.0
+rootdir: /home/jovyan
+plugins: anyio-3.6.2
+collected 17 items
+
+work/test_describe.py Directorio:  ['.profile', '.bash_logout', '.bashrc', '.cache', '.bash_history', '.astropy', '.jupyter', '.local', '.pytest_cache', '.ipython', '.conda', '.config', '.npm', '.wget-hsts', 'work']
+.test_describe_pandas_1M
+
+RAM ocupada ANTES del test: 
+16.8
+%
+
+RAM ocupada DESPUÉS del test: 
+18.3
+%
+
+.test_describe_pandas_5M
+
+RAM ocupada ANTES del test: 
+17.2
+%
+
+RAM ocupada DESPUÉS del test: 
+23.6
+%
+
+.test_describe_pandas_10M
+
+RAM ocupada ANTES del test: 
+17.8
+%
+
+RAM ocupada DESPUÉS del test: 
+30.5
+%
+
+.test_describe_pandas_25M
+
+RAM ocupada ANTES del test: 
+18.7
+%
+
+RAM ocupada DESPUÉS del test: 
+46.6
+%
+
+.test_describe_dask_1M
+
+RAM ocupada ANTES del test: 
+21.9
+%
+
+RAM ocupada DESPUÉS del test: 
+23.0
+%
+
+.test_describe_dask_5M
+
+RAM ocupada ANTES del test: 
+23.0
+%
+
+RAM ocupada DESPUÉS del test: 
+31.3
+%
+
+.test_describe_dask_10M
+
+RAM ocupada ANTES del test: 
+18.2
+%
+
+RAM ocupada DESPUÉS del test: 
+31.9
+%
+
+.test_describe_dask_25M
+
+RAM ocupada ANTES del test: 
+31.8
+%
+
+RAM ocupada DESPUÉS del test: 
+39.7
+%
+
+.test_describe_dask_total
+
+RAM ocupada ANTES del test: 
+17.2
+%
+
+RAM ocupada DESPUÉS del test: 
+40.4
+%
+
+.test_describe_vaex_1M
+
+RAM ocupada ANTES del test: 
+16.2
+%
+
+RAM ocupada DESPUÉS del test: 
+18.9
+%
+
+.test_describe_vaex_5M
+
+RAM ocupada ANTES del test: 
+18.9
+%
+
+RAM ocupada DESPUÉS del test: 
+20.2
+%
+
+.test_describe_vaex_10M
+
+RAM ocupada ANTES del test: 
+19.7
+%
+
+RAM ocupada DESPUÉS del test: 
+21.4
+%
+
+.test_describe_vaex_25M
+
+RAM ocupada ANTES del test: 
+21.2
+%
+
+RAM ocupada DESPUÉS del test: 
+23.2
+%
+
+.test_describe_vaex_total
+
+RAM ocupada ANTES del test: 
+15.4
+%
+
+RAM ocupada DESPUÉS del test: 
+19.2
+%
+
+
+.23/01/23 20:18:05 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/01/23 20:18:15 WARN CSVHeaderChecker: CSV header does not conform to the schema.
+ Header: , event_time, event_type, product_id, category_id, category_code, brand, price, user_id, user_session
+ Schema: _c0, event_time, event_type, product_id, category_id, category_code, brand, price, user_id, user_session
+Expected: _c0 but found: 
+CSV file: file:///home/jovyan/work/2019-Oct-1M.csv
+test_describe_pyspark_1M
+
+RAM ocupada ANTES del test: 
+31.3
+%
+
+RAM ocupada DESPUÉS del test: 
+37.3
+%
+
+test_describe_pyspark_5M
+
+RAM ocupada ANTES del test: 
+39.5
+%
+
+RAM ocupada DESPUÉS del test: 
+45.6
+%
+
+test_describe_pyspark_10M
+
+RAM ocupada ANTES del test: 
+45.6
+%
+
+RAM ocupada DESPUÉS del test: 
+48.0
+%
+
+test_describe_pyspark_25M
+
+RAM ocupada ANTES del test: 
+17.2
+%
+
+RAM ocupada DESPUÉS del test: 
+24.1
+%
+
+test_describe_pyspark_total
+
+RAM ocupada ANTES del test: 
+40.3
+%
+
+RAM ocupada DESPUÉS del test: 
+48.3
+%
+
+.
+
+====================================================== warnings summary ======================================================
+work/test_describe.py::Test::test_describe_pyspark_1M
+work/test_describe.py::Test::test_describe_pyspark_5M
+work/test_describe.py::Test::test_describe_pyspark_10M
+work/test_describe.py::Test::test_describe_pyspark_25M
+  /usr/local/spark/python/pyspark/sql/context.py:112: FutureWarning: Deprecated in 3.0.0. Use SparkSession.builder.getOrCreate() instead.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+===================================================== slowest durations ======================================================
+5366.93s call     work/test_describe.py::Test::test_describe_pyspark_total
+2522.37s call     work/test_describe.py::Test::test_describe_vaex_total
+1306.16s call     work/test_describe.py::Test::test_describe_pyspark_25M
+594.03s call     work/test_describe.py::Test::test_describe_vaex_25M
+506.87s call     work/test_describe.py::Test::test_describe_pyspark_10M
+373.15s call     work/test_describe.py::Test::test_describe_dask_total
+266.92s call     work/test_describe.py::Test::test_describe_pyspark_5M
+213.75s call     work/test_describe.py::Test::test_describe_vaex_10M
+83.61s call     work/test_describe.py::Test::test_describe_pandas_25M
+80.39s call     work/test_describe.py::Test::test_describe_vaex_5M
+79.00s call     work/test_describe.py::Test::test_describe_pyspark_1M
+76.94s call     work/test_describe.py::Test::test_describe_dask_25M
+35.26s call     work/test_describe.py::Test::test_describe_vaex_1M
+28.47s call     work/test_describe.py::Test::test_describe_dask_10M
+27.54s call     work/test_describe.py::Test::test_describe_pandas_10M
+17.84s call     work/test_describe.py::Test::test_describe_dask_5M
+12.89s call     work/test_describe.py::Test::test_describe_pandas_5M
+3.96s call     work/test_describe.py::Test::test_describe_dask_1M
+2.71s call     work/test_describe.py::Test::test_describe_pandas_1M
+
+(11 durations < 0.005s hidden.  Use -vv to show these durations.)
+========================================= 20 passed, 4 warnings in 11598.79s (3:13:18) ==========================================

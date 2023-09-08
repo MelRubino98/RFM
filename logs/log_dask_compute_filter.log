@@ -1,0 +1,68 @@
+===================================================== test session starts =====================================================
+platform linux -- Python 3.10.8, pytest-7.2.0, pluggy-1.0.0
+rootdir: /home/jovyan
+plugins: anyio-3.6.2
+collected 6 items
+
+work/test_dask_compute.py Directorio:  ['.profile', '.bash_logout', '.bashrc', '.cache', '.bash_history', '.astropy', '.jupyter', '.local', '.pytest_cache', '.ipython', '.conda', '.config', '.npm', '.wget-hsts', 'work']
+.filter_dask_1M
+
+RAM ocupada ANTES del test: 
+14.1
+%
+
+RAM ocupada DESPUÉS del test: 
+14.8
+%
+
+.filter_dask_5M
+
+RAM ocupada ANTES del test: 
+14.7
+%
+
+RAM ocupada DESPUÉS del test: 
+26.4
+%
+
+.filter_dask_10M
+
+RAM ocupada ANTES del test: 
+25.4
+%
+
+RAM ocupada DESPUÉS del test: 
+34.8
+%
+
+.filter_dask_25M
+
+RAM ocupada ANTES del test: 
+34.0
+%
+
+RAM ocupada DESPUÉS del test: 
+40.8
+%
+
+.filter_dask_total
+
+RAM ocupada ANTES del test: 
+39.7
+%
+
+RAM ocupada DESPUÉS del test: 
+46.6
+%
+
+.
+
+====================================================== slowest durations ======================================================
+120.92s call     work/test_dask_compute.py::Test::test_filter_dask_total
+28.05s call     work/test_dask_compute.py::Test::test_filter_dask_25M
+12.21s call     work/test_dask_compute.py::Test::test_filter_dask_10M
+6.21s call     work/test_dask_compute.py::Test::test_filter_dask_5M
+1.68s call     work/test_dask_compute.py::Test::test_filter_dask_1M
+
+(13 durations < 0.005s hidden.  Use -vv to show these durations.)
+================================================ 6 passed in 170.68s (0:02:50) ================================================

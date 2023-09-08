@@ -1,0 +1,49 @@
+========================================================= test session starts ==========================================================
+platform linux -- Python 3.10.8, pytest-7.2.0, pluggy-1.0.0
+rootdir: /home/jovyan
+plugins: anyio-3.6.2
+collected 2 items
+
+work/test_rfm_vaex.py Directorio:  ['.profile', '.bash_logout', '.bashrc', '.cache', '.bash_history', '.astropy', '.jupyter', '.local', '.pytest_cache', '.ipython', '.conda', '.config', '.npm', '.wget-hsts', 'work']
+.test_rfm_vaex
+
+RAM ocupada ANTES del test: 
+25.4
+%
+1
+61
+1
+640
+0.77
+344153.2899999999
+Percentil 98: 11.47103518295903
+Percentil 2: 8.539345602982523
+Percentil 98: 3379.129628711418
+
+RAM ocupada DESPUÉS del test: 
+33.9
+%
+
+.
+
+=========================================================== warnings summary ===========================================================
+work/test_rfm_vaex.py: 47 warnings
+  /opt/conda/lib/python3.10/ast.py:412: DeprecationWarning: visit_Str is deprecated; add visit_Constant
+    return visitor(node)
+
+work/test_rfm_vaex.py::Test::test_rfm_vaex
+work/test_rfm_vaex.py::Test::test_rfm_vaex
+work/test_rfm_vaex.py::Test::test_rfm_vaex
+  /opt/conda/lib/python3.10/ast.py:412: DeprecationWarning: visit_NameConstant is deprecated; add visit_Constant
+    return visitor(node)
+
+work/test_rfm_vaex.py: 22 warnings
+  /opt/conda/lib/python3.10/ast.py:412: DeprecationWarning: visit_Num is deprecated; add visit_Constant
+    return visitor(node)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================================================== slowest durations ===========================================================
+6.96s call     work/test_rfm_vaex.py::Test::test_rfm_vaex
+
+(5 durations < 0.005s hidden.  Use -vv to show these durations.)
+==================================================== 2 passed, 72 warnings in 8.34s ====================================================

@@ -1,0 +1,225 @@
+==================================================== test session starts =====================================================
+platform linux -- Python 3.10.8, pytest-7.2.0, pluggy-1.0.0
+rootdir: /home/jovyan
+plugins: anyio-3.6.2
+collected 19 items
+
+work/test_filter.py Directorio:  ['.profile', '.bash_logout', '.bashrc', '.cache', '.bash_history', '.astropy', '.jupyter', '.local', '.pytest_cache', '.ipython', '.conda', '.config', '.npm', '.wget-hsts', 'work']
+.filter_pandas_1M
+
+RAM ocupada ANTES del test: 
+16.3
+%
+
+RAM ocupada DESPUÉS del test: 
+16.8
+%
+
+.filter_pandas_5M
+
+RAM ocupada ANTES del test: 
+16.6
+%
+
+RAM ocupada DESPUÉS del test: 
+18.3
+%
+
+.filter_pandas_10M
+
+RAM ocupada ANTES del test: 
+17.2
+%
+
+RAM ocupada DESPUÉS del test: 
+20.3
+%
+
+.filter_dask_1M
+
+RAM ocupada ANTES del test: 
+18.0
+%
+
+RAM ocupada DESPUÉS del test: 
+18.0
+%
+
+.filter_dask_5M
+
+RAM ocupada ANTES del test: 
+17.9
+%
+
+RAM ocupada DESPUÉS del test: 
+17.9
+%
+
+.filter_dask_10M
+
+RAM ocupada ANTES del test: 
+17.9
+%
+
+RAM ocupada DESPUÉS del test: 
+17.9
+%
+
+.filter_dask_25M
+
+RAM ocupada ANTES del test: 
+17.9
+%
+
+RAM ocupada DESPUÉS del test: 
+17.9
+%
+
+.filter_dask_total
+
+RAM ocupada ANTES del test: 
+17.9
+%
+
+RAM ocupada DESPUÉS del test: 
+17.9
+%
+
+.filter_vaex_1M
+
+RAM ocupada ANTES del test: 
+17.9
+%
+
+RAM ocupada DESPUÉS del test: 
+18.5
+%
+
+.filter_vaex_5M
+
+RAM ocupada ANTES del test: 
+18.5
+%
+
+RAM ocupada DESPUÉS del test: 
+18.5
+%
+
+.filter_vaex_10M
+
+RAM ocupada ANTES del test: 
+18.0
+%
+
+RAM ocupada DESPUÉS del test: 
+18.0
+%
+
+.filter_vaex_25M
+
+RAM ocupada ANTES del test: 
+18.1
+%
+
+RAM ocupada DESPUÉS del test: 
+18.4
+%
+
+.filter_vaex_total
+
+RAM ocupada ANTES del test: 
+18.4
+%
+
+RAM ocupada DESPUÉS del test: 
+19.9
+%
+
+.23/01/16 14:17:59 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+test_filter_pyspark_1M
+
+RAM ocupada ANTES del test: 
+18.4
+%
+
+RAM ocupada DESPUÉS del test: 
+23.1
+%
+
+.test_filter_pyspark_5M
+
+RAM ocupada ANTES del test: 
+23.1
+%
+
+RAM ocupada DESPUÉS del test: 
+23.1
+%
+
+.test_filter_pyspark_10M
+
+RAM ocupada ANTES del test: 
+23.2
+%
+
+RAM ocupada DESPUÉS del test: 
+23.2
+%
+
+.test_filter_pyspark_25M
+
+RAM ocupada ANTES del test: 
+23.4
+%
+
+RAM ocupada DESPUÉS del test: 
+23.5
+%
+
+.test_filter_pyspark_total
+
+RAM ocupada ANTES del test: 
+23.5
+%
+
+RAM ocupada DESPUÉS del test: 
+23.6
+%
+
+.
+
+====================================================== warnings summary ======================================================
+work/test_filter.py::Test::test_filter_vaex_1M
+  <frozen importlib._bootstrap>:241: RuntimeWarning: numpy.ndarray size changed, may indicate binary incompatibility. Expected 88 from C header, got 96 from PyObject
+
+work/test_filter.py::Test::test_filter_pyspark_1M
+work/test_filter.py::Test::test_filter_pyspark_5M
+work/test_filter.py::Test::test_filter_pyspark_10M
+work/test_filter.py::Test::test_filter_pyspark_25M
+work/test_filter.py::Test::test_filter_pyspark_total
+  /usr/local/spark/python/pyspark/sql/context.py:112: FutureWarning: Deprecated in 3.0.0. Use SparkSession.builder.getOrCreate() instead.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+===================================================== slowest durations ======================================================
+253.54s call     work/test_filter.py::Test::test_filter_vaex_total
+60.49s call     work/test_filter.py::Test::test_filter_vaex_25M
+25.86s call     work/test_filter.py::Test::test_filter_pandas_10M
+16.08s call     work/test_filter.py::Test::test_filter_vaex_10M
+14.00s call     work/test_filter.py::Test::test_filter_vaex_5M
+11.86s call     work/test_filter.py::Test::test_filter_pandas_5M
+11.56s call     work/test_filter.py::Test::test_filter_pyspark_1M
+3.34s call     work/test_filter.py::Test::test_filter_vaex_1M
+2.57s call     work/test_filter.py::Test::test_filter_pandas_1M
+0.64s call     work/test_filter.py::Test::test_filter_pyspark_25M
+0.45s call     work/test_filter.py::Test::test_filter_pyspark_total
+0.43s call     work/test_filter.py::Test::test_filter_pyspark_5M
+0.38s call     work/test_filter.py::Test::test_filter_pyspark_10M
+0.10s call     work/test_filter.py::Test::test_filter_dask_total
+0.09s call     work/test_filter.py::Test::test_filter_dask_25M
+0.09s call     work/test_filter.py::Test::test_filter_dask_1M
+0.07s call     work/test_filter.py::Test::test_filter_dask_5M
+0.06s call     work/test_filter.py::Test::test_filter_dask_10M
+
+(39 durations < 0.005s hidden.  Use -vv to show these durations.)
+========================================= 19 passed, 6 warnings in 404.76s (0:06:44) =========================================

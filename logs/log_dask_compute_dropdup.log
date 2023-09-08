@@ -1,0 +1,46 @@
+===================================================== test session starts =====================================================
+platform linux -- Python 3.10.8, pytest-7.2.0, pluggy-1.0.0
+rootdir: /home/jovyan
+plugins: anyio-3.6.2
+collected 4 items
+
+work/test_dask_compute.py Directorio:  ['.profile', '.bash_logout', '.bashrc', '.cache', '.bash_history', '.astropy', '.jupyter', '.local', '.pytest_cache', '.ipython', '.conda', '.config', '.npm', '.wget-hsts', 'work']
+.test_drop_duplicates_dask_1M
+
+RAM ocupada ANTES del test: 
+12.9
+%
+
+RAM ocupada DESPUÉS del test: 
+16.1
+%
+
+.test_drop_duplicates_dask_5M
+
+RAM ocupada ANTES del test: 
+15.9
+%
+
+RAM ocupada DESPUÉS del test: 
+29.6
+%
+
+.test_drop_duplicates_dask_10M
+
+RAM ocupada ANTES del test: 
+29.6
+%
+
+RAM ocupada DESPUÉS del test: 
+46.4
+%
+
+.
+
+====================================================== slowest durations ======================================================
+44.92s call     work/test_dask_compute.py::Test::test_drop_duplicates_dask_10M
+19.89s call     work/test_dask_compute.py::Test::test_drop_duplicates_dask_5M
+2.94s call     work/test_dask_compute.py::Test::test_drop_duplicates_dask__compute_1M
+
+(9 durations < 0.005s hidden.  Use -vv to show these durations.)
+================================================ 4 passed in 71.14s (0:01:11) =================================================

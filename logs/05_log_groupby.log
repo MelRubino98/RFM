@@ -1,0 +1,233 @@
+==================================================== test session starts =====================================================
+platform linux -- Python 3.10.8, pytest-7.2.0, pluggy-1.0.0
+rootdir: /home/jovyan
+plugins: anyio-3.6.2
+collected 19 items
+
+work/test_groupby.py Directorio:  ['.profile', '.bash_logout', '.bashrc', '.cache', '.bash_history', '.astropy', '.jupyter', '.local', '.pytest_cache', '.ipython', '.conda', '.config', '.npm', '.wget-hsts', 'work']
+.groupby_pandas_1M
+
+RAM ocupada ANTES del test: 
+12.1
+%
+
+RAM ocupada DESPUÉS del test: 
+14.8
+%
+
+.groupby_pandas_5M
+
+RAM ocupada ANTES del test: 
+12.8
+%
+
+RAM ocupada DESPUÉS del test: 
+19.6
+%
+
+.groupby_pandas_10M
+
+RAM ocupada ANTES del test: 
+13.8
+%
+
+RAM ocupada DESPUÉS del test: 
+26.4
+%
+
+.groupby_pandas_25M
+
+RAM ocupada ANTES del test: 
+14.5
+%
+
+RAM ocupada DESPUÉS del test: 
+43.5
+%
+
+.groupby_dask_1M
+
+RAM ocupada ANTES del test: 
+14.3
+%
+
+RAM ocupada DESPUÉS del test: 
+14.3
+%
+
+.groupby_dask_5M
+
+RAM ocupada ANTES del test: 
+13.9
+%
+
+RAM ocupada DESPUÉS del test: 
+13.9
+%
+
+.groupby_dask_10M
+
+RAM ocupada ANTES del test: 
+13.8
+%
+
+RAM ocupada DESPUÉS del test: 
+13.8
+%
+
+.groupby_dask_25M
+
+RAM ocupada ANTES del test: 
+13.7
+%
+
+RAM ocupada DESPUÉS del test: 
+13.7
+%
+
+.groupby_dask_total
+
+RAM ocupada ANTES del test: 
+13.7
+%
+
+RAM ocupada DESPUÉS del test: 
+13.7
+%
+
+.groupby_vaex_1M
+
+RAM ocupada ANTES del test: 
+13.6
+%
+
+RAM ocupada DESPUÉS del test: 
+17.2
+%
+
+.groupby_vaex_5M
+
+RAM ocupada ANTES del test: 
+13.8
+%
+
+RAM ocupada DESPUÉS del test: 
+20.9
+%
+
+.groupby_vaex_10M
+
+RAM ocupada ANTES del test: 
+15.0
+%
+
+RAM ocupada DESPUÉS del test: 
+29.1
+%
+
+.groupby_vaex_25M
+
+RAM ocupada ANTES del test: 
+17.2
+%
+
+RAM ocupada DESPUÉS del test: 
+49.4
+%
+
+.23/01/16 15:15:20 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+groupby_pyspark_1M
+
+RAM ocupada ANTES del test: 
+17.8
+%
+
+RAM ocupada DESPUÉS del test: 
+22.8
+%
+
+.groupby_pyspark_5M
+
+RAM ocupada ANTES del test: 
+22.8
+%
+
+RAM ocupada DESPUÉS del test: 
+22.9
+%
+
+.groupby_pyspark_10M
+
+RAM ocupada ANTES del test: 
+22.8
+%
+
+RAM ocupada DESPUÉS del test: 
+22.9
+%
+
+.groupby_pyspark_25M
+
+RAM ocupada ANTES del test: 
+23.0
+%
+
+RAM ocupada DESPUÉS del test: 
+23.1
+%
+
+.groupby_pyspark_total
+
+RAM ocupada ANTES del test: 
+23.1
+%
+
+RAM ocupada DESPUÉS del test: 
+23.1
+%
+
+.
+
+====================================================== warnings summary ======================================================
+work/test_groupby.py::Test::test_groupby_vaex_1M
+work/test_groupby.py::Test::test_groupby_vaex_5M
+work/test_groupby.py::Test::test_groupby_vaex_10M
+work/test_groupby.py::Test::test_groupby_vaex_25M
+  /opt/conda/lib/python3.10/ast.py:412: DeprecationWarning: visit_NameConstant is deprecated; add visit_Constant
+    return visitor(node)
+
+work/test_groupby.py::Test::test_groupby_pyspark_1M
+work/test_groupby.py::Test::test_groupby_pyspark_5M
+work/test_groupby.py::Test::test_groupby_pyspark_10M
+work/test_groupby.py::Test::test_groupby_pyspark_25M
+work/test_groupby.py::Test::test_groupby_pyspark_total
+  /usr/local/spark/python/pyspark/sql/context.py:112: FutureWarning: Deprecated in 3.0.0. Use SparkSession.builder.getOrCreate() instead.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+===================================================== slowest durations ======================================================
+85.87s call     work/test_groupby.py::Test::test_groupby_vaex_25M
+81.89s call     work/test_groupby.py::Test::test_groupby_pandas_25M
+32.64s call     work/test_groupby.py::Test::test_groupby_vaex_10M
+26.24s call     work/test_groupby.py::Test::test_groupby_pandas_10M
+17.59s call     work/test_groupby.py::Test::test_groupby_vaex_5M
+13.91s call     work/test_groupby.py::Test::test_groupby_pyspark_1M
+13.12s call     work/test_groupby.py::Test::test_groupby_pandas_5M
+4.07s call     work/test_groupby.py::Test::test_groupby_dask_1M
+3.46s call     work/test_groupby.py::Test::test_groupby_vaex_1M
+2.64s call     work/test_groupby.py::Test::test_groupby_pandas_1M
+0.45s call     work/test_groupby.py::Test::test_groupby_pyspark_25M
+0.45s call     work/test_groupby.py::Test::test_groupby_pyspark_10M
+0.44s call     work/test_groupby.py::Test::test_groupby_pyspark_total
+0.42s call     work/test_groupby.py::Test::test_groupby_pyspark_5M
+0.14s call     work/test_groupby.py::Test::test_groupby_dask_total
+0.12s call     work/test_groupby.py::Test::test_groupby_dask_25M
+0.11s call     work/test_groupby.py::Test::test_groupby_dask_10M
+0.11s call     work/test_groupby.py::Test::test_groupby_dask_5M
+0.03s teardown work/test_groupby.py::Test::test_groupby_pandas_25M
+0.01s teardown work/test_groupby.py::Test::test_groupby_vaex_25M
+0.01s setup    work/test_groupby.py::Test::test_groupby_dask_1M
+0.01s setup    work/test_groupby.py::Test::test_groupby_pyspark_1M
+
+(35 durations < 0.005s hidden.  Use -vv to show these durations.)
+========================================= 19 passed, 9 warnings in 288.33s (0:04:48) =========================================
